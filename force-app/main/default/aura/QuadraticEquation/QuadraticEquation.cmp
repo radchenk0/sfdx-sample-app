@@ -1,8 +1,13 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
 
+    <aura:attribute name="equationParams" type="Array" />
+
+    <!-- Some initialization emulation without server side part -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
     <c:Abstract/>
     <lightning:layout multipleRows="true">
-        <c:EquationForm />
+        <c:EquationForm equationParams="{!v.equationParams}" />
     </lightning:layout>
 
 </aura:component>

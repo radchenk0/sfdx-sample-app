@@ -1,5 +1,7 @@
 ({
-    Greeting: function (component, event, helper) {
-        console.log('Hello, dude!')
+    doInit: function (component, event, helper) {
+        component.set("v.equationParams", []);
+    },
+    
     }
 })
