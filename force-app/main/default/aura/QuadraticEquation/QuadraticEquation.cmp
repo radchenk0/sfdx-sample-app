@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="solution" type="String" />
+    <aura:attribute name="isFormValid" type="Boolean" />
+    <aura:attribute name="equationParams" type="Array" />
+
+    <!-- Some initialization emulation without server side part -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- Event handler for updating solution value -->
+    <aura:handler name="updateSolution" event="c:updateSolution" action="{!c.handleUpdateSolution}" />
+
+    <c:Abstract/>
+    <lightning:layout multipleRows="true">
+        <c:EquationForm equationParams="{!v.equationParams}" isFormValid="{!v.isFormValid}" />
+        <c:Solution solution="{!v.solution}" />
+    </lightning:layout>
+
+</aura:component>
