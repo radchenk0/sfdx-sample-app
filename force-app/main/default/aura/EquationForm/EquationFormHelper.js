@@ -22,6 +22,10 @@
             solution = "Roots are x1 = " + (-b + sqrtD)/(2*a) + " and x2 = " + (-b - sqrtD)/(2*a);
         }
 
+        // Fire event which would be handled for updating solution 
+        var updateSolution = component.getEvent("updateSolution");
+        updateSolution.setParam("solution", solution);
+        updateSolution.fire();     
     },
 
     // Validation helper for filtering floats(Angular4 working example)
