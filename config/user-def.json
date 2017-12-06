@@ -1,0 +1,11 @@
+{
+    "Username": "LastName@org.com",
+    "FirstName": "FirstName",
+    "LastName": "LastName",
+    "Email": "unique@email.com",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Standard Platform User",
+    "generatePassword": true
+}
