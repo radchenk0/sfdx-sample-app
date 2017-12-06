@@ -1,0 +1,38 @@
+<aura:component>
+
+    <!-- Just a wrapper around static markup -->
+    <lightning:layout>
+        <lightning:layoutItem size="12" padding="around-small">
+            <div class="slds-box slds-theme_default">
+                <h2 class="slds-text-heading_large title">Abstract</h2>
+                <p>In algebra, a
+                    <b>quadratic equation</b> (from the Latin quadratus for "square") is any equation having the form</p>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/23e70cfa003f402d108ec04d97983fb62f69536e" width="150" height="auto"
+                    alt="ax^2+bx+c=0" />
+
+                <p>where
+                    <i>x</i> represents an unknown, and
+                    <i>a</i>,
+                    <i>b</i>, and
+                    <i>c</i> represent known numbers such that
+                    <i>a</i> is not equal to 0. If
+                    <i>a</i> = 0, then the equation is linear, not quadratic. The numbers
+                    <i>a</i>,
+                    <i>b</i>, and
+                    <i>c</i> are the
+                    <b>coefficients</b> of the equation, and may be distinguished by calling them, respectively, the
+                    <b>quadratic coefficient</b>, the
+                    <b>linear coefficient</b>
+                    and the
+                    <b>constant</b> or
+                    <b>free term</b>.
+                </p>
+                <br/>
+                <p>The quadratic formula for the roots of the general quadratic equation</p>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/42efe5c6f302eb75186b3d5b782129850bfa04d1" width="200" height="auto"
+                />
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    
+</aura:component>
