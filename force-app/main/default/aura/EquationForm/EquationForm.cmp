@@ -1,7 +1,10 @@
 <aura:component>
 
+    <aura:attribute name="isFormValid" type="Boolean" />
     <aura:attribute name="equationParams" type="Array" />
 
+    <!-- Validation handler -->
+    <aura:handler name="change" value="{!v.equationParams}" action="{!c.valueChangeValidation}" />
 
     <lightning:layoutItem padding="around-small" size="12 " mediumDeviceSize="6">
         <div class="slds-box slds-theme_default">
@@ -11,25 +14,29 @@
                     <lightning:input type="text" 
                                      label="Quadratic coefficient" 
                                      aura:id="equationForm" 
+                                     messageWhenBadInput="Provide correct number, please" 
                                      value='{!v.equationParams[0]}'
                                      placeholder="a" 
                                      required="true" />
                     <lightning:input type="text" 
                                      label="Linear coefficient" 
                                      aura:id="equationForm" 
+                                     messageWhenBadInput="Provide correct number, please" 
                                      value='{!v.equationParams[1]}'
                                      placeholder="b" 
                                      required="true" />
                     <lightning:input type="text" 
                                      label="Constant" 
                                      aura:id="equationForm" 
+                                     messageWhenBadInput="Provide correct number, please"
                                      value='{!v.equationParams[2]}'
                                      placeholder="c"
                                      required="true" />
                     <lightning:button label="Solve" 
                                       class="slds-m-top_medium" 
                                       variant="brand" 
-                                      onclick="{!c.solve}" />
+                                      onclick="{!c.solve}" 
+                                      disabled="{! !v.isFormValid}" />
                 </form>
             </fieldset>
         </div>

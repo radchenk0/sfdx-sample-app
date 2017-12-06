@@ -24,5 +24,9 @@
 
     },
 
+    // Validation helper for filtering floats(Angular4 working example)
+    filterFloat: function (value) {
+        return !isNaN(value - parseFloat(value));
     }
+
 })
