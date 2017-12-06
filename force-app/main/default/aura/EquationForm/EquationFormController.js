@@ -1,4 +1,21 @@
 ({
+    doInit: function (component, event, helper) {
+        component.set("v.paramsHelper", [
+            {
+                label: "Quadratic coefficient",
+                placeholder: "a"
+            },
+            {
+                label: "Linear coefficient",
+                placeholder: "b"
+            },
+            {
+                label: "Constant",
+                placeholder: "c"
+            }
+        ]);
+    },
+
     solve: function (component, event, helper) {
         var equationParams = component.get("v.equationParams");
         helper.findSolution(component, equationParams);

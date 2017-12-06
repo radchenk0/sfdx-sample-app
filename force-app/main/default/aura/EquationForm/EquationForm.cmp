@@ -2,7 +2,10 @@
 
     <aura:attribute name="isFormValid" type="Boolean" />
     <aura:attribute name="equationParams" type="Array" />
+    <aura:attribute name="paramsHelper" type="Array" />
 
+    <!-- Initialization -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <!-- Validation handler -->
     <aura:handler name="change" value="{!v.equationParams}" action="{!c.valueChangeValidation}" />
     <!-- Event registration -->
