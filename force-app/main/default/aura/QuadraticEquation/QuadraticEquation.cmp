@@ -6,6 +6,8 @@
 
     <!-- Some initialization emulation without server side part -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- Event handler for updating solution value -->
+    <aura:handler name="updateSolution" event="c:updateSolution" action="{!c.handleUpdateSolution}" />
 
     <c:Abstract/>
     <lightning:layout multipleRows="true">
