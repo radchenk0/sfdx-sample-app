@@ -1,0 +1,4 @@
+<!-- Component event for updating solution value from parent component -->
+<aura:event type="COMPONENT" description="Update solution">
+    <aura:attribute name="solution" type="String" />
+</aura:event>
